@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nextpage.css">
+    <title>Welcome to Gaming Website</title>
+</head>
+<body style="background-image: url('https://hdqwalls.com/wallpapers/destiny-2-black-armory-4k-hk.jpg');">
+    <div class="welcome-container">
+        <h1>Welcome <span id="welcomeUsername"></span>User</h1>
+        <div class="content-container">
+            <section class="featured-guns">
+                <h2>Featured Guns</h2>
+                <div class="gun-card">
+                    <img src="https://images.hdqwalls.com/download/cyber-gun-guy-4k-0l-1920x1080.jpg" alt="Gun 1">
+                    <h3>Gun 1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit numquam dolorem, nam aperiam eius laboriosam. Amet omnis magni temporibus. Numquam, deleniti veritatis officiis dolore autem repudiandae officia quo natus blanditiis.</p>
+                </div>
+                <div class="gun-card">
+                    <img src="https://vignette.wikia.nocookie.net/heart-of-souls-roleplay/images/5/57/1920x1080_counter-strike-armory-video-games-artwork-HD-Wallpaper.jpg/revision/latest?cb=20151007172800" alt="Gun 2">
+                    <h3>Gun 2</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium tenetur adipisci fuga ipsa harum, saepe numquam vero reprehenderit reiciendis laborum! Eius ad corrupti harum nesciunt dolore voluptate incidunt, iusto adipisci?</p>
+                </div>
+              
+            </section>
+    
+            <section class="gun-reviews">
+                <h2>Gun Reviews</h2>
+                <div class="review">
+                    <h3>Gun 1 Review</h3>
+                    <p>User123 says: "I love Gun 1! It's powerful and accurate."</p>
+                </div>
+                <div class="review">
+                    <h3>Gun 2 Review</h3>
+                    <p>Shooter456 says: "Gun 2 is the best choice for long-range engagements."</p>
+                </div>
+              
+            </section>
+    
+            <section class="user-comments">
+                <h2>User Comments</h2>
+                <div class="comment">
+                    <p>User789: "Great website! I'd love to see more content about sniper rifles."</p>
+                </div>
+                <div class="comment">
+                    <p>Enthusiast101: "The design is awesome! Keep up the good work."</p>
+                </div>
+                <div class="side-buttons-container">
+                    <button class="side-button" onclick="handleButtonClick('Button 1')">next stuffs</button>
+                    <button class="side-button" onclick="handleButtonClick('Button 2')">bext stuffs</button>
+                </div>
+            
+              
+            </section>
+        </div>
+    </div>
+
+    <script>
+       const urlParams = new URLSearchParams(window.location.search);
+        const username = urlParams.get('username');
+        document.getElementById('welcomeUsername').innerText = username;
+
+        function handleButtonClick(buttonText) {
+            console.log(`${buttonText} clicked!`);
+        }
+    </script>
+</body>
+</html>
